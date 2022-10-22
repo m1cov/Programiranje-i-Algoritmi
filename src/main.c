@@ -1,23 +1,13 @@
 #include <stdio.h>
 int main()
 {
+	int m, n;
 
-	int x;
+	printf("Pick 2 numbers, any numbers\n");
+	scanf("%d %d", &m, &n);
+	printf("Zbirot e %d, razlikata e %d, proizvodot e %d\n", m + n, m - n, m * n);
+	printf("Pogolemiot broj e %d", m >= n ? m : n);
 
-	printf("Vnesi broj: ");
-	scanf("%d", &x);
-	
-	for (int i = 2; i < x; i++)
-	{
-		if (x % i == 0)
-		{
-			printf("Brojot ne e prost");
-			break;
-		}
-		else if (i == x - 1)
-			printf("Brojot e prost");
-	}
-
-	scanf("%d", &x);
+	scanf("%d", &n);
 	return (0);
 }
