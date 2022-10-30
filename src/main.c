@@ -1,13 +1,17 @@
 #include <stdio.h>
+
 int main()
 {
-	int m, n;
 
-	printf("Pick 2 numbers, any numbers\n");
-	scanf("%d %d", &m, &n);
-	printf("Zbirot e %d, razlikata e %d, proizvodot e %d\n", m + n, m - n, m * n);
-	printf("Pogolemiot broj e %d", m >= n ? m : n);
+	int a, b;
 
-	scanf("%d", &n);
-	return (0);
+	printf("Vnesi 2 celi broja\n");
+	scanf("%d %d", &a, &b);
+
+	a *= b;
+
+	if (a > b)
+		b = a - b;
+
+	printf("Novite vrednosti na a i b se %d i %d, \n a rezultatot na nivno delenje e %d", a, b, a / b);
 }
