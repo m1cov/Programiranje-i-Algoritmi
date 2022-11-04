@@ -11,7 +11,7 @@ int main()
     a *= b;
 
     if (a > b)
-        b = a - b;
+        b -= a;
 
     printf("Novite vrednosti na a i b se %d i %d, \n a rezultatot na nivno delenje e %d", a, b, a / b);
 }
