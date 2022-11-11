@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-int delitel(int a)
+int pogolem(int a)
 {
 
     if (a < 10)
         return 1;
     else
     {
-
-        if ((a / 10 % 10) % (a % 10) == 0)
-            delitel(a / 10);
+        if ((a / 10 % 10) < a % 10)
+            pogolem(a / 10);
         else
             return 0;
     }
@@ -23,6 +22,7 @@ int main()
     printf("Vnesi broj\n");
     scanf("%d", &n);
 
-    printf("%d", delitel(n));
+    printf("%d", pogolem(n));
+
     return 0;
 }
