@@ -6,10 +6,7 @@ int rek(int x)
     if (x < 10)
         return 1;
     else
-    {
-
         return (rek(x / 10) + 1) % 2 == 0 ? 0 : 1;
-    }
 }
 
 int main()
