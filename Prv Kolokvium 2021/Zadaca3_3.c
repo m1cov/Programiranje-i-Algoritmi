@@ -12,7 +12,6 @@ int f(int x)
 }
 int main()
 {
-
     int n;
 
     printf("Vnesi broj\n");
