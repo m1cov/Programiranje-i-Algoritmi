@@ -1,14 +1,27 @@
 #include <stdio.h>
 
+int prost(int a)
+{
+
+    for (int i = 2; i < a; i++)
+    {
+        if (a % i == 0)
+            return 0;
+    }
+
+    return 1;
+}
+
 int f(int x)
 {
 
-    int p;
-
     if (x < 10)
+        return 0;
+
+    if (prost(x))
         return 1;
 
-    f(x / 10);
+    return f(x / 10);
 }
 int main()
 {

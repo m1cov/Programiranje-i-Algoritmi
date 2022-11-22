@@ -1,6 +1,3 @@
-/* Dva sosedni broja da se delivi eden so drug ako na toj so pomal stepen mu se dodade 1
- */
-
 #include <stdio.h>
 
 int f(int x)
