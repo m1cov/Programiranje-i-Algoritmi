@@ -8,11 +8,8 @@ int eprost(int x)
         return 1;
 
     for (int i = 2; i <= x; i++)
-    {
-
         if (x % i == 0 && x != i)
             return 0;
-    }
 
     return 1;
 }
@@ -28,9 +25,7 @@ int main()
 
     printf("Vnesi gi elementite na nizata\n");
     for (int i = 0; i < n; i++)
-    {
         scanf("%d", &niza[i]);
-    }
 
     for (int i = 0; i < n - 1; i++)
     {
@@ -45,9 +40,7 @@ int main()
     }
 
     for (int i = 0; i < n; i++)
-    {
         printf("%d ", niza[i]);
-    }
 
     return 0;
 }

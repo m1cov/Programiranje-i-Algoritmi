@@ -17,28 +17,22 @@ int main()
     br = m * n;
 
     for (int i = 0; i < n; i++)
-    {
         for (int j = 0; j < m; j++)
         {
 
             scanf("%d", &mat[i][j]);
             sr += mat[i][j];
         }
-    }
 
     sr /= br;
     br = 0;
     for (int i = 0; i < n; i++)
-    {
         for (int j = 0; j < m; j++)
-        {
             if (mat[i][j] > sr)
             {
                 br++;
                 printf("%d ", mat[i][j]);
             }
-        }
-    }
 
     printf("\n%d", br);
 
