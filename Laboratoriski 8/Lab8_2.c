@@ -8,7 +8,7 @@ void f(int *niza, int n)
     {
         int temp = *(niza + i);
         *(niza + i) = *(niza + j);
-        *(niza + j) = temp;
+        *(niza + j) = temp; 
     }
 
     for (int i = 0; i < n; i++)
