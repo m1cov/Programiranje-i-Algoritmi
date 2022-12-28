@@ -53,10 +53,8 @@ int main()
         }
 
         temp = 0;
-        printf("\n\n");
+        printf("\n");
     }
-
-    printf("Dolzinata e %d", dolzina);
 
     for (int i = 0; i < n; i++)
     {

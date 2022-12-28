@@ -10,7 +10,7 @@
 */
 
 #include <stdio.h>
-#define max 10
+#define max 100
 
 int main()
 {
