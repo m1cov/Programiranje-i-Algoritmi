@@ -1,16 +1,30 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int funkcija(int *niza, int n)
 {
     int br = n;
-    for (int i = 0; i < n - 1; i++)
+
+    for (int i = 0; i < n; i++)
     {
-        if (*(niza + i) >= *(niza + i + 1)){
+        if (*(niza + i + 1) >= *(niza + i))
+        {
 
-            
+            if (*(niza + i + 1) < 0)
+            {
 
+                *(niza + i + 1) = *(niza + i + 2);
+                br--;
+                i--;
+            }
+            else
+                *(niza + i + 1) -= (abs(*(niza + i + 1)) + abs(*(niza + i)) + 1);
         }
+
+        printf("%d\n", *(niza + i));
     }
+
+    return br;
 }
 
 int main()
@@ -27,6 +41,11 @@ int main()
            scanf("%d", niza + i);*/
 
     n = funkcija(niza, n);
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", niza[i]);
+    }
 
     return 0;
 }
