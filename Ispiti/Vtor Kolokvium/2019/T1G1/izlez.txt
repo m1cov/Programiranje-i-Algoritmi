@@ -1,0 +1,2 @@
+Skripta2.sh 7
+1
